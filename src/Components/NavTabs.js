@@ -53,11 +53,11 @@ function NavTab() {
             <Nav.Link as={Link} to="/talktoastroguru" className="navlinkscstome">Astro guru</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to="/imagedisplay"  className="navlinkscstome">Gallery</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
             <Nav.Link as={Link} to="/subscribe"   className="navlinkscstome">Subscribe</Nav.Link>
           </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={Link} to="/imagedisplay"  className="navlinkscstome">Gallery</Nav.Link>
+          </Nav.Item>     
         </Nav>
       </div>
     </div>

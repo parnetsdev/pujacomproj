@@ -12,7 +12,7 @@ const Profile = (props) => {
   };
 
   return (
-    <Container className="profile-container">
+    <Container className="profile-container mt-3">
       <Row className="align-items-center">
         <Col xs={12} md={4} className="profile-image-col">
           <img

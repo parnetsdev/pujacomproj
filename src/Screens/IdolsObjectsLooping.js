@@ -114,7 +114,7 @@ function IdolsObjectsLoop() {
                       style={{
                         color: "#343a40",
                         fontWeight: "bold",
-                        fontFamily: "Times New Roman, Georgia, Garamond",
+                        fontFamily: "Space Grotesk",
                         height: "40px",
                       }}
                     >
@@ -136,10 +136,10 @@ function IdolsObjectsLoop() {
                     <h5
                       className="mt-3"
                       style={{
-                        color: "rgb(176 174 167)",
-                        fontWeight: "bold",
+                        color: "rgb(1 109 41)",
+                      
                         fontSize:"15px",
-                        fontFamily: "Arial, sans-serif",
+                        fontfamily: "Gowun Dodum  sans-serif",
                       }}
                     >
                       Price: {item.price}

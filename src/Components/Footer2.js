@@ -25,7 +25,7 @@ const Footer2 = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          backdropFilter: "blur(2px)", // Applies blur effect
+          backdropFilter: "blur(4px)", // Applies blur effect
           zIndex: 1, //above image nd below content
         }}
       ></div>
@@ -99,9 +99,9 @@ const Footer2 = () => {
             <address>
               <strong>UMABHARATI JYOTISHAM LLP</strong>
               <br />
-              Sirsi, Uttara Kannada,
+              A.G.S. Layout (opp), 
               <br />
-              Karnataka, 581402, India
+              Venkatappa Layout,Bangalore
               <br />
               <a href="/" className="text-light">
                 gmail@gmail.com

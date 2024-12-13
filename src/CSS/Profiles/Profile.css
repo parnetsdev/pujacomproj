@@ -3,7 +3,8 @@
 
 .profile-container {
     margin-top: 20px;
-    border: 1px solid #f0e6f6;
+    border: 1px solid #0c0c0c23;
+    border-radius: 10px;
   }
   
   /* .profile-container:hover {

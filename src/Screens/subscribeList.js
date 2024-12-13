@@ -136,8 +136,8 @@ const Subscribe = () => {
                 }}
               >
                 <h4 style={{ color: "#5A4633" }}>{product.name}</h4>
-                <p style={{ color: "#6C584C" }}>{product.description}</p>
-                <p style={{ color: "#6C584C" }}>
+                {/* <p style={{ color: "#6C584C" }}>{product.description}</p> */}
+                <p style={{ color: "#6C584C",marginTop:"15px" }}>
                   <strong>Subscription Details:</strong>{" "}
                   {product.subscriptionDetails}
                 </p>
