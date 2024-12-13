@@ -105,9 +105,26 @@ const CartScreen = () => {
   };
 
   return (
+    <div className="cartpageclassname-main">
     <Container fluid>
-      <h4 className="Puja-title">Cart</h4>
-      <Row className="justify-content-center">
+        <div className="title-main">
+       
+        <h3
+          style={{
+            color: "#ff6600",
+            fontFamily: "'Merienda One', cursive",
+          }}
+        >
+          Cart Page
+        </h3>
+
+        <img
+          src="assetstwo/backgroundimages/titleunderline-removebg.png"
+          alt="not found"
+          width={150}
+        />
+      </div>
+      <Row className="justify-content-center mt-4">
         {/* Right Column (Cart Table) */}
         <Col md={9}>
           <Table bordered hover responsive>
@@ -396,6 +413,7 @@ const CartScreen = () => {
         </Modal.Footer>
       </Modal>
     </Container>
+    </div>
   );
 };
 

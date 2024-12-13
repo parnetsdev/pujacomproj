@@ -55,7 +55,7 @@ const NotFound = () => {
 
 const ChatIcon = ({ onclick }) => (
   <div
-    className="position-fixed z-index-50 p-3 rounded-circle text-white"
+    className="position-fixed p-3 rounded-circle text-white scrollupsindex"
     style={{
       zindex:"100" ,
       bottom: "13px",
@@ -76,7 +76,7 @@ const ChatIcon = ({ onclick }) => (
 const ScrollToTopIcon = ({ onClick }) => (
   <div
     onClick={onClick}
-    className="position-fixed z-index-50 p-3 text-white rounded-circle shadow-lg"
+    className="position-fixed p-3 text-white rounded-circle shadow-lg scrollupsindex"
     style={{
       bottom: "80px",
       right: "8px",

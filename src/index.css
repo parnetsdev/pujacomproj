@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
 
-html, body {
-  overflow: visible; /* Ensure visibility */
-  height: auto; /* Ensure full height */
+.scrollupsindex{
+  z-index: 50 !important;
 }
 
 
@@ -14,6 +13,23 @@ html, body {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+
+.cartpageclassname-main .title-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 0 !important;
+  width: fit-content;
+}
+
+.cartpageclassname-main .title-main img {
+  margin-top: 1px;
 }
 
 /* devotee */

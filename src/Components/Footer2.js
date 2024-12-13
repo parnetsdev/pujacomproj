@@ -32,7 +32,7 @@ const Footer2 = () => {
 
       <div
         className="container position-relative"
-        style={{ zIndex: 2 }} // Ensures content is above the blur
+        style={{ zIndex: 2 }} 
       >
         <div className="row">
           <div className="col-md-3 mb-4 mb-md-0">
