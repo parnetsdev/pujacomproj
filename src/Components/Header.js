@@ -35,14 +35,22 @@ function Header() {
             href="tel:+180042543333"
             className="navbarList-color d-flex align-items-center"
           >
-            <FontAwesomeIcon icon={faPhone} style={{ marginRight: "5px" }} fontSize={12}/>
+            <FontAwesomeIcon
+              icon={faPhone}
+              style={{ marginRight: "5px" }}
+              fontSize={12}
+            />
             9342254946
           </Nav.Link>
           <Nav.Link
             href="mailto:help@epuja.co.in"
             className="navbarList-color d-flex align-items-center"
           >
-            <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: "5px" }} fontSize={13} />
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              style={{ marginRight: "5px" }}
+              fontSize={13}
+            />
             help@gmail.com
           </Nav.Link>
           <Nav.Link
@@ -86,11 +94,13 @@ function Header() {
 
           <Nav.Link className="navbarList-color">Register</Nav.Link>
 
-          
-            <Nav.Link as={Link} to="/clientdashboard" className="navbarList-color d-flex align-items-center">
-              <i class="fa fa-user" aria-hidden="true"></i>
-            </Nav.Link>
-     
+          <Nav.Link
+            as={Link}
+            to="/clientdashboard"
+            className="navbarList-color d-flex align-items-center"
+          >
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </Nav.Link>
 
           <Nav.Link
             className="d-inline d-md-none navbarList-color"
@@ -125,22 +135,22 @@ function Header() {
             </li>
             <li>
               <Link to="/objectsofpuja" className="sideoverlay-List">
-                Service/Pooja
-              </Link>
-            </li>
-            <li>
-              <Link to="/idelsobjectsloop" className="sideoverlay-List">
-                Idols Shop
-              </Link>
-            </li>
-            <li>
-              <Link to="/subscipitionobjects" className="sideoverlay-List">
-                Subscribe
+                All Pujas
               </Link>
             </li>
             <li>
               <Link to="/talktoastroguru" className="sideoverlay-List">
-                Talk to Astroguru
+                Astro guru
+              </Link>
+            </li>
+            <li>
+              <Link to="/imagedisplay" className="sideoverlay-List">
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link to="/subscribe" className="sideoverlay-List">
+                Subscribe
               </Link>
             </li>
           </ul>
