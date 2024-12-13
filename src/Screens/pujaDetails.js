@@ -37,17 +37,17 @@ function PujaDetails() {
             <Card className="mb-4">
               <Card.Body>
                 <Card.Title
-                  className="text-center mb-4"
-                  style={{ fontSize: "1.5rem", fontWeight: "bold" }}
+                  className="text-center mb-4 pujadetailstitle"
+                  // style={{ fontSize: "1.5rem", fontWeight: "bold" }}
                 >
                   Aditya Homam
                 </Card.Title>
-                <Card.Subtitle
+                {/* <Card.Subtitle
                   className="mb-3 text-center"
                   style={{ fontSize: "1.1rem", color: "#6c757d" }}
                 >
                   <strong>Presiding Deity:</strong> Surya
-                </Card.Subtitle>
+                </Card.Subtitle> */}
 
                 <Row>
                   <Col md={12}>
@@ -60,7 +60,10 @@ function PujaDetails() {
                   </Col>
                 </Row>
 
-                <Card.Text style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+                <Card.Text 
+                className="pujaDetailsdescription"
+                // style={{ fontSize: "1rem", lineHeight: "1.6" }}
+                >
                   The homam is performed invoking the blessings of Aditya, the
                   sun god. He is also known as Surya or Ravi. Those who suffer
                   the ill effects of Surya dasai, Surya bukthi would benefit

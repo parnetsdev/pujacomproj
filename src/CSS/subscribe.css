@@ -1,4 +1,11 @@
 /* Base styles for the product container */
+
+
+.subscribeListclassname{
+  background-color: rgb(255 99 71 / 19%);
+}
+
+
 .product-container {
     display: flex;
     flex-direction: row;

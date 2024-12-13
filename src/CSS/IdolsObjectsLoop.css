@@ -7,6 +7,10 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+
+  .IdelsObjectsLoopClassname{
+    background-color: rgb(255 99 71 / 19%);
+  }
   
   .IdelsObjectsLoopClassname .card-subtitle {
     height: 20px;

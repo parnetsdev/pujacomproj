@@ -13,6 +13,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import "../CSS/IdolsObjectsLoop.css";
 import { items } from "../Data/data";
+import { Link } from 'react-router-dom'
+
 
 function IdolsObjectsLoop() {
   const [expandedKey, setExpandedKey] = useState("0");
@@ -55,11 +57,32 @@ function IdolsObjectsLoop() {
     <div
       className="IdelsObjectsLoopClassname"
       style={{
-        backgroundColor: "#FFF4E6",
+        // backgroundColor: "#FFF4E6",
         minHeight: "100vh",
         padding: "20px",
       }}
     >
+    <div class="puja-list-banner">
+        <img src="assetstwo/banner/deepa.jpg" alt="not found"  />
+        <div className="banner-text">
+          <h1>All Idols</h1>
+          <p>
+            Book a pooja online and receive divine solutions with blessed
+            prasada.
+          </p>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <Link to="/">Home</Link>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                All Idols
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
       <Row className="mt-3">
        
 

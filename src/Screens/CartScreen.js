@@ -128,27 +128,32 @@ const CartScreen = () => {
                   <td>
                     <strong>{item.name}</strong>
                     <br />
-                    <small>
-                      <strong>Homam Ref:</strong> {item.ref}
-                    </small>
-                    <br />
-                    <small>
-                      <strong>Homam for:</strong> {item.homamFor}
-                    </small>
-                    <br />
-                    <small>
-                      <strong>Homam Date:</strong> {item.date}
-                    </small>
-                    <br />
-                    <small>
-                      <strong>Homam Option:</strong>
-                    </small>
-                    <br />
-                    <small>No. of Priests: {item.priests}</small>
-                    <br />
-                    <small>No. of Chants: {item.chants}</small>
-                    <br />
-                    <small>Time: {item.time}</small>
+
+                    {item.part !== "idols" && (
+                      <>
+                        <small>
+                          <strong>Homam Ref:</strong> {item.ref}
+                        </small>
+                        <br />
+                        <small>
+                          <strong>Homam for:</strong> {item.homamFor}
+                        </small>
+                        <br />
+                        <small>
+                          <strong>Homam Date:</strong> {item.date}
+                        </small>
+                        <br />
+                        <small>
+                          <strong>Homam Option:</strong>
+                        </small>
+                        <br />
+                        <small>No. of Priests: {item.priests}</small>
+                        <br />
+                        <small>No. of Chants: {item.chants}</small>
+                        <br />
+                        <small>Time: {item.time}</small>
+                      </>
+                    )}
                   </td>
                   <td className="text-center">
                     {item.part === "idols" ? (

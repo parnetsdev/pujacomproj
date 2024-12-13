@@ -19,9 +19,9 @@ import whatsapp from "./gifjson/whatsapp.json";
 import ImageDisplay from "./Screens/ImageDisplay";
 import Subscribe from "./Screens/subscribeList";
 import TestComponent from "./Screens/TestComponent";
-import Testimonials2 from "./Screens/Testimonials2";
+// import Testimonials2 from "./Screens/Testimonials2";
 // import TestimonialsMasonry from "./Screens/TestimonialCard";
-import TestimonialsMasonry2 from "./Screens/TestimonialsMasonry2";
+// import TestimonialsMasonry2 from "./Screens/TestimonialsMasonry2";
 import Devotees from "./Screens/Devotees";
 import IdolObjectDetails from "./Screens/IdolObjectDetails";
 import Home2 from "./Screens/Home2";
@@ -32,6 +32,7 @@ import PujaDetails from "./Screens/pujaDetails";
 import IdolDetails from "./Screens/IdolDetails";
 import ClientDashboard from "./Screens/ClientDashboard";
 import CartScreen from "./Screens/CartScreen";
+import SubScribePujaDetails from "./Screens/SubscribePujaDetails";
 
 const NotFound = () => {
   return (
@@ -137,19 +138,20 @@ function App() {
           <Route path="/imagedisplay" element={<ImageDisplay />} />
           <Route path="/subscribe" element={<Subscribe />} />
           <Route path="/testcomponent" element={<TestComponent />} />
-          <Route path="/Testimonials2" element={<Testimonials2 />} />
+          {/* <Route path="/Testimonials2" element={<Testimonials2 />} /> */}
           <Route path="/cartscreen" element={<CartScreen />} />
           {/* <Route path="/TestimonialsMasonry" element={<TestimonialsMasonry />} /> */}
 
-          <Route
+          {/* <Route
             path="/TestimonialsMasonry2"
             element={<TestimonialsMasonry2 />}
-          />
+          /> */}
           <Route path="/Devotees" element={<Devotees />} />
           <Route path="/IdolObjectDetails" element={<IdolObjectDetails />} />
           <Route path="/pujadetails" element={<PujaDetails />} />
           <Route path="/IdolDetails" element={<IdolDetails />} />
           <Route path="/clientdashboard" element={<ClientDashboard />} />
+          <Route path="/SubScribePujaDetails" element={<SubScribePujaDetails />} />
          
          
           {/* <Route path="/test" element={<Test />} /> */}

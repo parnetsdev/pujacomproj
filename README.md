@@ -64,3 +64,10 @@ This enables Emmet support for JavaScript, React, and TypeScript files.
     { id: 8, name: "Sarah Ahmed", location: "Cairo, Egypt", message: "Always be thankful." },
     { id: 9, name: "Carlos Mendoza", location: "Mexico City, Mexico", message: "Stay blessed." },
     { id: 10, name: "Amina Yusuf", location: "Nairobi, Kenya", message: "May we all be united in peace." },
+
+rgb(116 99 77)
+
+
+The cart page will display the selected Homam details, including the number of priests, chants, idols, along with quantity adjustments, unit prices, total prices, and options to delete or modify each item.
+
+If you click on the subscribe button, it will first ask for confirmation. If confirmed, the subscription will be added to the list.

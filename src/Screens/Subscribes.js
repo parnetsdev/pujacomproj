@@ -2,6 +2,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import { Button } from "react-bootstrap";
 import "../CSS/Subscribes.css";
+import "../MobileCSS/SubScribemobile.css"
+
 
 const upcomingEvents = [
   {
@@ -86,15 +88,12 @@ const Subscribes = () => {
         <img
           src="assetstwo/backgroundimages/subscribe2.jpeg"
           alt="not found"
-          width="100%"
-          height="520px"
+          // width="100%"
+          // height="520px"
           className="test-image-class"
           style={{ objectFit: "cover", position: "relative" }}
         />
-        {/* <div className='subscribe-title'>
-    <h5>Subscribe now</h5>
-    <p>JOIN US AND BECOME <br/> PART OF SOMETHING GREATE</p>
-    </div> */}
+      
         <div
           className="test-child-class"
           style={{
@@ -110,7 +109,7 @@ const Subscribes = () => {
           >
             {upcomingEvents.map((event) => (
               <div key={event.id}>
-                <div className="test-inner-body" style={{ height: "500px" }}>
+                <div className="test-inner-body" >
                   <div>
                     <p className="display-4">{event.title}</p>
                     <p className="lead text-muted">{event.subtitle}</p>

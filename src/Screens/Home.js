@@ -16,7 +16,7 @@ import Method1 from "../Components/HomeSections/Method1";
 import Method2 from "../Components/HomeSections/Method2";
 import "../CSS/Home/Home.css";
 import TestimonialSection from "../Components/HomeSections/testimonials";
-import Testimonials from "./Testimonials";
+// import Testimonials from "./Testimonials";
 import Method3 from "../Components/HomeSections/Method3";
 import Devotees from "./Devotees";
 import WordsFromDevotees from "./WordsFromDevotees";

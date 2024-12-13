@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import "../CSS/subscribe.css";
-import { Container, Row, Col, Card, Button, Modal,Form } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  Button,
+  Modal,
+  Form,
+} from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
 
 const products = [
   {
@@ -46,6 +55,8 @@ const products = [
 ];
 
 const Subscribe = () => {
+
+  const navigate=useNavigate()
   //modal open(code)
   const [show, setShow] = useState(false);
   const [formData, setFormData] = useState({
@@ -75,8 +86,28 @@ const Subscribe = () => {
   };
   return (
     <div className="subscribeListclassname">
+      <div class="puja-list-banner px-4 py-4">
+        <img src="assetstwo/banner/deepa.jpg" alt="not found" />
+        <div className="banner-text">
+          <h1>All Subscription List</h1>
+          <p>
+            Book a pooja online and receive divine solutions with blessed
+            prasada.
+          </p>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <Link to="/">Home</Link>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                All Pujas
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
       <Container className="py-4">
-      <div className="title-main">
+        {/* <div className="title-main">
             <h3
               style={{
                 color: "#ff6600",
@@ -91,7 +122,7 @@ const Subscribe = () => {
               alt="not found"
               width={300}
             />
-          </div>
+          </div> */}
         {products.map((product) => (
           <Card className="mb-4 shadow-sm" key={product.id}>
             <Row className="g-0 align-items-center">
@@ -113,14 +144,19 @@ const Subscribe = () => {
                 <h5 style={{ color: "#5A4633" }}>{product.price}</h5>
                 <Button
                   variant="warning"
-                  style={{ color: "#FFF", backgroundColor: "#E0C097" }}
-                  onClick={handleShow}
+                  style=
+                  {{ 
+                    color: "#FFF", 
+                    // backgroundColor: "#E0C097" 
+                    backgroundColor: "rgb(116 99 77)" 
+                    }}
+                  onClick={()=>navigate("/SubScribePujaDetails")}
                 >
-                  Subscribe Now
+                  View details
                 </Button>
               </Col>
 
-              {/* Right Column: Product Image */}
+     
               <Col md={4} className="text-center">
                 <img
                   src={product.imageUrl}
@@ -133,7 +169,8 @@ const Subscribe = () => {
           </Card>
         ))}
       </Container>
-      <Modal show={show} onHide={handleClose}>
+
+      {/* <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Enter Your Details</Modal.Title>
         </Modal.Header>
@@ -163,17 +200,7 @@ const Subscribe = () => {
               />
             </Form.Group>
 
-            {/* <Form.Group className="mb-3" controlId="formLocation">
-              <Form.Label>Location</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter your location"
-                name="location"
-                value={formData.location}
-                onChange={handleChange}
-                required
-              />
-            </Form.Group> */}
+          
 
             <Form.Group className="mb-3" controlId="formEmail">
               <Form.Label>Email</Form.Label>
@@ -219,7 +246,7 @@ const Subscribe = () => {
             Close
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
     </div>
   );
 };

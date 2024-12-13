@@ -60,7 +60,7 @@ function ObjectsofPuja() {
       }}
     >
       <div class="puja-list-banner">
-        <img src="assetstwo/banner/deepa.jpg" alt="not found" loading="lazy" />
+        <img src="assetstwo/banner/deepa.jpg" alt="not found"  />
         <div className="banner-text">
           <h1>All Pooja Services</h1>
           <p>
@@ -70,7 +70,7 @@ function ObjectsofPuja() {
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <Link href="/">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 All Pujas

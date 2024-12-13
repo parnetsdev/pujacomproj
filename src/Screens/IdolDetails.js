@@ -35,8 +35,8 @@ function IdolDetails() {
             <Card className="mb-4">
               <Card.Body>
                 <Card.Title
-                  className="text-center mb-4"
-                  style={{ fontSize: "1.5rem", fontWeight: "bold" }}
+                  className="text-center mb-4 idolsdetailstitle"
+                  // style={{ fontSize: "1.5rem", fontWeight: "bold" }}
                 >
                   Three Mukhi Round (Nepal)
                 </Card.Title>
@@ -58,7 +58,10 @@ function IdolDetails() {
                   </Col>
                 </Row>
 
-                <Card.Text style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+                <Card.Text 
+                className="idolsdetailsdescr"
+                // style={{ fontSize: "1rem", lineHeight: "1.6" }}
+                >
                   The Mukhi (One-faced) Rudraksha is one of the most revered and
                   powerful beads in Hinduism. As the name suggests, it has a
                   single facet or "mukh," making it unique compared to other
