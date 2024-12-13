@@ -76,6 +76,8 @@ function Header() {
           <Nav.Link
             href="#home"
             className="navbarList-color d-flex align-items-center"
+            as={Link}
+            to="/cartscreen"
           >
             <i
               className="fa badge fa-lg cart-icon"

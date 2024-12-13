@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
 
+html, body {
+  overflow: visible; /* Ensure visibility */
+  height: auto; /* Ensure full height */
+}
+
+
 .Puja-title {
   color: #2c3e50;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

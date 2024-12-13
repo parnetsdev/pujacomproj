@@ -74,7 +74,16 @@
   color: #ffd700 !important;
 }
 
+.breadcrumb-item+.breadcrumb-item::before{
+  color: brown !important;
+}
+
 .pujalistslots {
   color: green;
   font-family: "Gowun Dodum", sans-serif;
+}
+
+.filtercategories{
+  display: none !important;
+  margin-top: 5px;
 }

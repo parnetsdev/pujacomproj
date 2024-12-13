@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col, Dropdown, Card, Button, Accordion } from "react-bootstrap";
+import { Row, Col, Dropdown, Card, Button, Accordion,Offcanvas } from "react-bootstrap";
 import SidebarAccordionpujas from "../Components/Sidebars/SidebarAccordionpujas";
 // import ObjectDetails from "./ObjectDetails";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,6 +7,7 @@ import "../CSS/objectsofPujas.css";
 import { cardsData } from "../Data/data";
 import { FaChevronRight, FaChevronDown } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
+import "../MobileCSS/Pujacategoriesmobile.css"
 
 const CustomToggle = ({ children, isExpanded }) => {
   return (
@@ -35,7 +36,10 @@ const CustomToggle = ({ children, isExpanded }) => {
 function ObjectsofPuja() {
   const [expandedKey, setExpandedKey] = useState(null);
   const [nestedExpandedKey, setNestedExpandedKey] = useState(null);
+  const [showOffcanvas, setShowOffcanvas] = useState(false); // State to control the offcanvas visibility
 
+  const handleCloseOffcanvas = () => setShowOffcanvas(false);
+  const handleShowOffcanvas = () => setShowOffcanvas(true);
   const navigate = useNavigate();
 
   // Function to handle accordion toggle
@@ -56,7 +60,7 @@ function ObjectsofPuja() {
       }}
     >
       <div class="puja-list-banner">
-        <img src="assetstwo/banner/deepa.jpg" alt="not found" />
+        <img src="assetstwo/banner/deepa.jpg" alt="not found" loading="lazy" />
         <div className="banner-text">
           <h1>All Pooja Services</h1>
           <p>
@@ -76,6 +80,68 @@ function ObjectsofPuja() {
         </div>
       </div>
 
+
+       <Button  onClick={handleShowOffcanvas} className="filtercategories">
+         Categories
+      </Button>
+
+      <Offcanvas show={showOffcanvas} onHide={handleCloseOffcanvas}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Filter Options</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+  
+          <h5>Homams</h5>
+          <SidebarAccordionpujas
+            expandedKey={expandedKey}
+            onToggle={handleToggle}
+            nestedExpandedKey={nestedExpandedKey}
+            onNestedToggle={handleNestedToggle}
+          />
+          <div
+            style={{
+              backgroundColor: "#FFE4B5",
+              padding: "15px",
+              borderBottomLeftRadius: "15px",
+              borderBottomRightRadius: "15px",
+              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+              borderTopColor: "2px solid black",
+            }}
+          >
+            <Card
+              style={{
+                backgroundColor: "#FFF8DC",
+                borderRadius: "15px",
+                marginBottom: "10px",
+                padding: "0",
+                overflow: "hidden",
+                boxShadow: "none",
+              }}
+            >
+              <Card.Header
+                style={{
+                  backgroundColor: "#FFEBCD",
+                  borderRadius: "10px",
+                  padding: "0",
+                  margin: "0",
+                }}
+              >
+                <CustomToggle>Ganesh Puja</CustomToggle>
+              </Card.Header>
+              <Card.Header
+                style={{
+                  backgroundColor: "#FFEBCD",
+                  borderRadius: "10px",
+                  padding: "0",
+                  margin: "0",
+                }}
+              >
+                <CustomToggle>Good Specific Pujas</CustomToggle>
+              </Card.Header>
+            </Card>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
       <Row className="mt-3">
         <Col
           lg={3}

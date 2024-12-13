@@ -23,7 +23,14 @@
     color: white;
     padding: 10px;
     position: relative;
+    
   }
+
+  footer {
+    position: relative; /* Ensures footer has its own stacking context */
+    z-index: 1; /* Lower than icons */
+  }
+  
 
   .blur-background::before {
     content: '';

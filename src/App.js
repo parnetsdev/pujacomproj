@@ -31,6 +31,7 @@ import Homams from "./Screens/Homam";
 import PujaDetails from "./Screens/pujaDetails";
 import IdolDetails from "./Screens/IdolDetails";
 import ClientDashboard from "./Screens/ClientDashboard";
+import CartScreen from "./Screens/CartScreen";
 
 const NotFound = () => {
   return (
@@ -55,9 +56,11 @@ const ChatIcon = ({ onclick }) => (
   <div
     className="position-fixed z-index-50 p-3 rounded-circle text-white"
     style={{
+      zindex:"100" ,
       bottom: "13px",
       right: "4px",
       cursor: "pointer",
+     
       transition: "transform 0.2s",
     }}
     onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.25)")}
@@ -77,6 +80,7 @@ const ScrollToTopIcon = ({ onClick }) => (
       bottom: "80px",
       right: "8px",
       cursor: "pointer",
+      
       transition: "transform 0.2s",
     }}
     onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.25)")}
@@ -134,6 +138,7 @@ function App() {
           <Route path="/subscribe" element={<Subscribe />} />
           <Route path="/testcomponent" element={<TestComponent />} />
           <Route path="/Testimonials2" element={<Testimonials2 />} />
+          <Route path="/cartscreen" element={<CartScreen />} />
           {/* <Route path="/TestimonialsMasonry" element={<TestimonialsMasonry />} /> */}
 
           <Route

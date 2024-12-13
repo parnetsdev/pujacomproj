@@ -61,26 +61,7 @@ function IdolsObjectsLoop() {
       }}
     >
       <Row className="mt-3">
-        {/* <Col
-          lg={3}
-          sm={12}
-          className="d-none d-lg-block"
-          style={{
-            background: "linear-gradient(to bottom, #FFF4E6, #FFDAB9)",
-            borderTop: "1px solid #ddd",
-            paddingRight: "0",
-            position: "sticky",
-            top: "0",
-            height: "100vh",
-            overflowY: "auto",
-          }}
-        >
-          <h5 className="ms-4">Idols Category</h5>
-          <SidebarAccordionIdels
-            expandedKey={expandedKey}
-            onToggle={handleToggle}
-          />
-        </Col> */}
+       
 
         <Col lg={12} sm={12} style={{ paddingLeft: "0" }}>
           <Row className="g-4">
@@ -141,7 +122,7 @@ function IdolsObjectsLoop() {
                       Price: {item.price}
                     </h5>
                     <Row className="idolsshopsbuttons">
-                    <Col className="idolsshopsbutn-section1">
+                    {/* <Col className="idolsshopsbutn-section1">
                     <Button
                       className="mt-2"
                       style={{
@@ -155,7 +136,7 @@ function IdolsObjectsLoop() {
                     >
                       Order Now
                     </Button>
-                    </Col>
+                    </Col> */}
                     <Col className="idolsshopsbutn-section2">
                     <Button
                       className="mt-2"
