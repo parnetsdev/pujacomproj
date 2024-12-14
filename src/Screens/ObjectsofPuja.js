@@ -87,7 +87,7 @@ function ObjectsofPuja() {
 
       <Offcanvas show={showOffcanvas} onHide={handleCloseOffcanvas}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Filter Options</Offcanvas.Title>
+          <Offcanvas.Title>Categories List</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
   
