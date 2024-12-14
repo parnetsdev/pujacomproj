@@ -41,7 +41,7 @@ function Tades() {
           />
         </div>
 
-        <div className="tades-back-main">
+        {/* <div className="tades-back-main">
           <Carousel responsive={responsive} infinite={true} arrows={false} swipeable={false} draggable={false}>
             {tades.map((category) => (
               <div key={category.id} className="tades-card-wrapper">
@@ -55,7 +55,7 @@ function Tades() {
                     />
                   </div>
                   <Card.Body className="tades-card-body">
-                    {/* <Link to={`test?id=${category.id}`}> */}
+            
                     <Link
                       to="/objectsofpuja"
                       style={{ textDecoration: "none" }}
@@ -72,6 +72,47 @@ function Tades() {
               </div>
             ))}
           </Carousel>
+        </div> */}
+
+        <div className="tades-back-main">
+          <Row>
+            {tades.map((category) => (
+              <Col
+                key={category.id}
+                xs={12}
+                sm={6}
+                md={4}
+                lg={3}
+                className="mb-4"
+              >
+                <div className="tades-card-wrapper">
+                  <Card className="tades-card">
+                    <div className="tades-card-image-wrapper">
+                      <Card.Img
+                        variant="top"
+                        src={category.image}
+                        alt={category.altText}
+                        className="tades-card-img"
+                      />
+                    </div>
+                    <Card.Body className="tades-card-body">
+                      <Link
+                        to="/objectsofpuja"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <Card.Title className="tades-card-title">
+                          {category.title}
+                        </Card.Title>
+                      </Link>
+                      <Card.Text className="tades-card-price">
+                        From &#8377; {category.price}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </Col>
+            ))}
+          </Row>
         </div>
       </section>
     </div>

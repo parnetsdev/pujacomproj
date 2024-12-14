@@ -49,6 +49,8 @@
 
 
 
+
+
 /* .home2-talktoastoguru-main .talkoastoguru-child h3 {
   color: white;
   font-size: 38px;
@@ -147,4 +149,9 @@
 
 .ourdevotee-main .title-main img {
   margin-top: 1px;
+}
+
+
+.homeclassname .card-body{
+  padding: 0 !important;
 }

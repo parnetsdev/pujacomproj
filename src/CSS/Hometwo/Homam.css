@@ -21,6 +21,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    height: 440px;
   }
   
   .homam-main-section .homam-card-body {
@@ -28,6 +29,7 @@
     padding: 10px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    position: relative;
   }
   
   .homam-main-section .homam-card-title {
@@ -63,7 +65,10 @@
     font-family: "Lemonada", cursive;
     font-weight: 500;
     color: #ff6600;
-    margin-top: 3px;
+    /* margin-top: 3px; */
+    position: absolute;
+    left: 1%;
+    bottom: 3%;
   }
   
   .homam-main-section .homam-back-main {
@@ -93,4 +98,64 @@
       left: calc(4% + 1px) !important;
     }
   }
+  
+
+  /* row,col */
+
+  /* .homam-card-wrapper {
+    padding: 15px;
+    height: 100%;
+  }
+  
+  .homam-card {
+    background: inherit !important;
+    padding: 0 !important;
+    border: none !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .homam-card-image-wrapper {
+    height: 330px;
+  }
+  
+  .homam-card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .homam-card-body {
+    background: white !important;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .homam-card-title {
+    text-align: start !important;
+    margin-top: 10px !important;
+    font-size: 18px !important;
+    color: #010101 !important;
+    font-weight: 380 !important;
+  }
+  
+  .homam-card-price {
+    font-size: 16px;
+    font-family: "Lemonada", cursive;
+    font-weight: 500;
+    color: #ff6600;
+    margin-top: 3px;
+  }
+  
+  .homam-back-main {
+    background-color: #ff9933;
+    background-image: url("/public/assetstwo/backgroundimages/sectionbackground.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    padding: 20px;
+  } */
   
