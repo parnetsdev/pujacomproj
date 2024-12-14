@@ -60,7 +60,8 @@ function ObjectsofPuja() {
       }}
     >
       <div class="puja-list-banner">
-        <img src="assetstwo/banner/deepa.jpg" alt="not found"  />
+        {/* <img src="assetstwo/banner/deepa.jpg" alt="not found"  /> */}
+        <img src={process.env.PUBLIC_URL + '/assetstwo/banner/deepa.jpg'} alt="Banner" />
         <div className="banner-text">
           <h1>All Pooja Services</h1>
           <p>
