@@ -141,6 +141,11 @@ function Header() {
               </Link>
             </li>
             <li>
+              <Link to="/idolsobjectsloop" className="sideoverlay-List">
+                Idols
+              </Link>
+            </li>
+            <li>
               <Link to="/talktoastroguru" className="sideoverlay-List">
                 Astro guru
               </Link>
