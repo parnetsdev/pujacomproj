@@ -86,11 +86,11 @@ function ObjectsofPuja() {
          Categories
       </Button>
 
-      <Offcanvas show={showOffcanvas} onHide={handleCloseOffcanvas}>
+      <Offcanvas show={showOffcanvas} onHide={handleCloseOffcanvas} style={{ maxHeight: "100vh", overflowY: "auto" }}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Categories List</Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
+        <Offcanvas.Body >
   
           <h5>Homams</h5>
           <SidebarAccordionpujas
@@ -103,6 +103,7 @@ function ObjectsofPuja() {
             style={{
               backgroundColor: "#FFE4B5",
               padding: "15px",
+              height:"100%",
               borderBottomLeftRadius: "15px",
               borderBottomRightRadius: "15px",
               boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",

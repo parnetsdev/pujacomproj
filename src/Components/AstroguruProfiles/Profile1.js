@@ -32,6 +32,11 @@ const Profile = (props) => {
             passionate teacher of management and has over 5000 students spread
             across industries.
           </p>
+          <div className="profile-details">
+            <p><strong>Languages Spoken:</strong> English, Hindi</p>
+            <p><strong>Price per Hour:</strong> $50</p>
+            <p><strong>Available Time:</strong> 10:00 AM - 6:00 PM</p>
+          </div>
           <Button
             variant="link"
             className="read-more-btn"

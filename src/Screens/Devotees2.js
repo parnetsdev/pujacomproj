@@ -2,6 +2,8 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import "../CSS/Devotees2.css";
+import "../MobileCSS/Devotees2mobile.css"
+
 
 const Devotees2 = () => {
   const contentArray = [

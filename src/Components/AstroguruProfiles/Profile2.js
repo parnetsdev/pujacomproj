@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Row, Col, Container, Button,Modal,Form } from "react-bootstrap";
-import "../../CSS/Profiles/Profile.css"
+import { Row, Col, Container, Button, Modal, Form } from "react-bootstrap";
+import "../../CSS/Profiles/Profile.css";
 
 const Profile2 = () => {
   const [showModal, setShowModal] = useState(false);
@@ -10,7 +10,6 @@ const Profile2 = () => {
     setShowModal(true);
   };
 
-  
   return (
     <Container className="profile-container">
       <Row className="align-items-center">
@@ -33,8 +32,23 @@ const Profile2 = () => {
             believes that meditation and unconditional devotion to the almighty
             opens the doors for contentment and happiness in the life.
           </p>
-          <Button variant="link" className="read-more-btn"  onClick={() => handleShow()}>
-          Talk to Astrology
+          <div className="profile-details">
+            <p>
+              <strong>Languages Spoken:</strong> English, Hindi
+            </p>
+            <p>
+              <strong>Price per Hour:</strong> $50
+            </p>
+            <p>
+              <strong>Available Time:</strong> 10:00 AM - 6:00 PM
+            </p>
+          </div>
+          <Button
+            variant="link"
+            className="read-more-btn"
+            onClick={() => handleShow()}
+          >
+            Talk to Astrology
           </Button>
         </Col>
         <Modal show={showModal} onHide={handleClose} size="md">
